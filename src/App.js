@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import CarList from './Components/carList';
+import CarDetails from './Components/carDetails';
+import cars from './data/data'; 
 import './App.css';
 
+
 function App() {
+  const [selectedCar, setSelectedCar] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+        <h1>Welcome To 23G Motors</h1>
+      <CarList cars={cars} onSelectCar={setSelectedCar} />
+      <CarDetails selectedCar={selectedCar} />
     </div>
   );
 }
