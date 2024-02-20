@@ -40,9 +40,15 @@
 
 /* margin and padding */
 * {
-  margin: 20px;
+  /* margin: 20px; */
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh; /* This ensures the full height of the viewport is covered */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -50,20 +56,33 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  background-image: url('https://www.hdcarwallpapers.com/download/rolls_royce_la_rose_noire_droptail_2023_8k-3840x2160.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  overflow: auto;
+}
+
+
 /* Container */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
+.content {
+  width: 90%; /* Or whatever width suits your design */
+  max-width: 1100px; /* Keeps content from stretching too wide on large screens */
+  margin: auto; /* Centers the content */
 }
 
 /* Header styles */
 .header {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
 }
 

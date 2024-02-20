@@ -9,11 +9,13 @@ function App() {
   const [selectedCar, setSelectedCar] = useState(null);
 
   return (
-    <div className="container">
-        <h1>Welcome To 23G Motors</h1>
+    <div className="main-container" style={{ textAlign: 'center' }}>
+    <h1 style={{ color: '#ffffff' }}>Welcome To 23G Motors</h1>
+    <div className="content">
       <CarList cars={cars} onSelectCar={setSelectedCar} />
-      <CarDetails selectedCar={selectedCar} />
+      {selectedCar && <CarDetails selectedCar={selectedCar} />}
     </div>
+  </div>
   );
 }
 

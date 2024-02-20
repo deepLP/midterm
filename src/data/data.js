@@ -2,7 +2,7 @@
 const cars = [
     {
       id: 1,
-      name: 'Tesla Model S',
+      name: 'Tesla Model Roadster',
       model: 'Model S',
       year: '2020',
       color: 'Black',
@@ -14,7 +14,7 @@ const cars = [
       model: 'Mustang',
       year: '2021',
       color: 'Red',
-      imageUrl: 'https://assets-global.website-files.com/63c4bd441c21782eb0d195d5/6539f18663bab6a5f0e6b4ea_S650_AUS_Family.jpg'
+      imageUrl: 'https://www.hdwallpapers.in/download/ford_mustang_dark_horse_2024_car_4k_8k_hd_cars-7680x4320.jpg'
     }
   ];
   
