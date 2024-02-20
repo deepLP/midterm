@@ -11,10 +11,17 @@ class CarDetails extends Component {
     return (
       <div className="car-details">
         <h2>{selectedCar.name}</h2>
+        
         <p>Model: {selectedCar.model}</p>
         <p>Year: {selectedCar.year}</p>
         <p>Color: {selectedCar.color}</p>
-        <img src={selectedCar.imageUrl} alt={selectedCar.name} className="car-image" />
+
+        <img src={selectedCar.imageUrl1} alt={selectedCar.name} className="car-image" />
+       
+        <p>Model: {selectedCar.model2}</p>
+        <p>Year: {selectedCar.year2}</p>
+        <p>color: {selectedCar.color2}</p>
+        <img src={selectedCar.imageUrl2} alt={selectedCar.name} className="car-image" />
       </div>
     );
   }
